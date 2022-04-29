@@ -17,10 +17,6 @@ $(document).ready( function() {
         if (progress == 100) {
           $(e.target).next().html('<li class="jfu_info jfu_done"> Upload complete! </li>');
         }
-      },
-      progress: function(e, data) {
-        console.log('progress e', e);
-        console.log('progress data', data);
       }
     };
     options = $.extend({}, options, $(this).data('options'));
